@@ -12,6 +12,7 @@ basic.showIcon(IconNames.Happy)
 let number1: number = null
 let number2: number = null
 
+// reassign variables
 number1 = randint(0, 99)
 number2 = randint(0, 99)
 
