@@ -17,7 +17,7 @@ input.onButtonPressed(Button.A, function () {
     basic.clearScreen()
     basic.showString('#1:' + number1.toString())
     basic.showIcon(IconNames.Happy)
-})
+}) 
 
 // when the "B" button is pressed
 input.onButtonPressed(Button.B, function () {
