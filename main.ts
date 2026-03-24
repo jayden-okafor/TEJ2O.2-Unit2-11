@@ -8,7 +8,7 @@
 // show happy face
 basic.showIcon(IconNames.Happy)
 
-//variables
+// variables
 let number1: number = randint(0, 99)
 let number2: number = randint(0, 99)
 
