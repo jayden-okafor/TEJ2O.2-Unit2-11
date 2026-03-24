@@ -5,6 +5,8 @@
  * This program shows you
 */
 
+basic.showIcon(IconNames.Happy)
+
 let number1: number = randint(0, 99)
 let number2: number = randint(0, 99)
 
@@ -21,6 +23,7 @@ input.onButtonPressed(Button.B, function () {
 })
 
 input.onGesture(Gesture.Shake, function () {
+    basic.clearScreen()
     if (number1 < number2) {
         basic.showString(number1.toString() + '<' + number2.toString())
     } else {
