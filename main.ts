@@ -29,4 +29,5 @@ input.onGesture(Gesture.Shake, function () {
     } else {
         basic.showString(number1.toString() + '>' + number2.toString())
     }
+    basic.showIcon(IconNames.Happy)
 })
