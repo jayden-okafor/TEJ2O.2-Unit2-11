@@ -1,8 +1,29 @@
-/* Copyright (c) 2020 MTHS All rights reserved
+/* Copyright (c) 2026 MTHS All rights reserved
  *
- * Created by: XXX
- * Created on: Sep 2020
- * This program ...
+ * Created by: Jayden Okafor
+ * Created on: Mar 2026
+ * This program shows you
 */
 
-basic.showString('Hello, World!')
+let number1: number = randint(0, 99)
+let number2: number = randint(0, 99)
+
+basic.clearScreen()
+
+input.onButtonPressed(Button.A, function () {
+    basic.showString('#1:' + number1.toString())
+    basic.showIcon(IconNames.Happy)
+})
+
+input.onButtonPressed(Button.B, function () {
+    basic.showString('#2:' + number2.toString())
+    basic.showIcon(IconNames.Happy)
+})
+
+input.onGesture(Gesture.Shake, function () {
+    if (number1 < number2) {
+        basic.showString(number1.toString() + '<' + number2.toString())
+    } else {
+        basic.showString(number1.toString() + '>' + number2.toString())
+    }
+})
