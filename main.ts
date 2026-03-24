@@ -8,14 +8,14 @@
 let number1: number = randint(0, 99)
 let number2: number = randint(0, 99)
 
-basic.clearScreen()
-
 input.onButtonPressed(Button.A, function () {
+    basic.clearScreen()
     basic.showString('#1:' + number1.toString())
     basic.showIcon(IconNames.Happy)
 })
 
 input.onButtonPressed(Button.B, function () {
+    basic.clearScreen()
     basic.showString('#2:' + number2.toString())
     basic.showIcon(IconNames.Happy)
 })
