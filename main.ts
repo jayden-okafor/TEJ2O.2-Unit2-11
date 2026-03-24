@@ -7,7 +7,7 @@
 
 // show happy face
 basic.showIcon(IconNames.Happy)
-
+ 
 // variables
 let number1: number = null
 let number2: number = null
