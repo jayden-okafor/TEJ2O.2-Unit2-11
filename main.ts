@@ -9,8 +9,11 @@
 basic.showIcon(IconNames.Happy)
 
 // variables
-let number1: number = randint(0, 99)
-let number2: number = randint(0, 99)
+let number1: number = null
+let number2: number = null
+
+number1 = randint(0, 99)
+number2 = randint(0, 99)
 
 // when the "A" button is pressed
 input.onButtonPressed(Button.A, function () {
