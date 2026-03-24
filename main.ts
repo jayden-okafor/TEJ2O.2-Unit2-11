@@ -5,23 +5,28 @@
  * This program shows you
 */
 
+// show happy face
 basic.showIcon(IconNames.Happy)
 
+//variables
 let number1: number = randint(0, 99)
 let number2: number = randint(0, 99)
 
+// when the "A" button is pressed
 input.onButtonPressed(Button.A, function () {
     basic.clearScreen()
     basic.showString('#1:' + number1.toString())
     basic.showIcon(IconNames.Happy)
 })
 
+// when the "B" button is pressed
 input.onButtonPressed(Button.B, function () {
     basic.clearScreen()
     basic.showString('#2:' + number2.toString())
     basic.showIcon(IconNames.Happy)
 })
 
+// when the microbit is shaked
 input.onGesture(Gesture.Shake, function () {
     basic.clearScreen()
     if (number1 < number2) {
