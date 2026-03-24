@@ -2,7 +2,7 @@
  *
  * Created by: Jayden Okafor
  * Created on: Mar 2026
- * This program shows you
+ * This program generates two random numbers, lets the user view them when either "A" or "B" is clicked, and compares them when the micro:bit is shaken.
 */
 
 // show happy face
