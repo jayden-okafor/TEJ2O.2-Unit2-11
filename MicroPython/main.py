@@ -11,6 +11,10 @@ import random
 display.show(Image.HAPPY)
 
 # variables
+number1 = None
+number2 = None
+
+# reassign variables
 number1 = random.randint(0, 99)
 number2 = random.randint(0, 99)
 
