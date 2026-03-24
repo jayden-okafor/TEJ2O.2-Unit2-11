@@ -10,7 +10,7 @@ import random
 # show happy face
 display.show(Image.HAPPY)
 
-#variables
+# variables
 number1 = random.randint(0, 99)
 number2 = random.randint(0, 99)
 
@@ -18,20 +18,20 @@ while True:
     # when the "A" button is pressed
     if button_a.was_pressed():
         display.clear()
-        display.scroll('#1:' + str(number1))
+        display.scroll("#1:" + str(number1))
         display.show(Image.HAPPY)
 
     # when the "B" button is pressed
     if button_b.was_pressed():
         display.clear()
-        display.scroll('#2:' + str(number2))
+        display.scroll("#2:" + str(number2))
         display.show(Image.HAPPY)
 
     # when the microbit is shaked
-    if accelerometer.was_gesture('shake'):
+    if accelerometer.was_gesture("shake"):
         display.clear()
         if number1 < number2:
-            display.scroll(str(number1) + '<' + str(number2))
+            display.scroll(str(number1) + "<" + str(number2))
         else:
-            display.scroll(str(number1) + '>' + str(number2))
+            display.scroll(str(number1) + ">" + str(number2))
         display.show(Image.HAPPY)
